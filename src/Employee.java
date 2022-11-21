@@ -32,7 +32,13 @@ public class Employee {
             EmployeeArray[i] = e;
         }
     }
-
+    public static void ViewAll(){
+        for(int i=0; i<5; i++)
+        {
+            Employee e = EmployeeArray[i];
+            System.out.println(e.Empcode+ " "+e.Empname+" "+e.Designation+ " "+e.Salary+ " "+e.PhoneNumb+ " "+e.Email+ " ");
+        }
+    }
 
     public static void main (String[] args){
             int option;
